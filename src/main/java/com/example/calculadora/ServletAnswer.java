@@ -21,7 +21,7 @@ public class ServletAnswer extends HttpServlet {
         String ans= "null";
         switch (req.getParameter("oper")) {
             case "-" -> {
-                    ans = String.valueOf(a - b);
+                    ans = String.valueOf(restar(a, b));
             }
             case "+" -> {
                     ans = String.valueOf(a + b);
@@ -41,6 +41,10 @@ public class ServletAnswer extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         doGet(req, resp);
+    }
+
+    public double restar(double a,double b){
+        return a-b;
     }
 
 }
