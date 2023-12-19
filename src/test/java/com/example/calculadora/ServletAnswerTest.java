@@ -3,7 +3,6 @@ package com.example.calculadora;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.Assert.*;
